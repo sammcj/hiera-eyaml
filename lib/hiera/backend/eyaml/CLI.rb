@@ -16,6 +16,10 @@ class Hiera
 
         def self.parse
 
+          ARGV.each do |arg|
+            STDERR.puts arg
+          end
+
           options = Trollop::options do
 
             version "Hiera-eyaml version " + Hiera::Backend::Eyaml::VERSION.to_s

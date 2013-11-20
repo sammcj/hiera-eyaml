@@ -2,7 +2,7 @@ class Hiera
   module Backend
     module Eyaml
 
-      VERSION = "1.3.8"
+      VERSION = "1.3.9"
 
       def self.default_encryption_scheme= new_encryption
         @@default_encryption_scheme = new_encryption
